@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".menu.MenuFragment">
+
+    <TextView
+        android:id="@+id/movies_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/movies"
+        android:layout_marginTop="@dimen/title_margin_top"
+        style="@style/BaseTitleStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/menu_logo"
+        android:layout_width="@dimen/icon_size"
+        android:layout_height="@dimen/icon_size"
+        android:layout_marginBottom="@dimen/icon_margin_bottom"
+        android:background="@drawable/ic_popcorn"
+        app:layout_constraintTop_toBottomOf="@id/movies_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_50dp"
+        android:paddingBottom="@dimen/margin_40dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/menu_logo">
+
+        <Button
+            android:id="@+id/how_to_play_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/primary_button_margin_top"
+            android:text="@string/how_to_play"
+            style="@style/BasePrimaryButtonStyle"
+            app:layout_constraintTop_toBottomOf="@id/menu_logo" />
+
+        <Button
+            android:id="@+id/start_game_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/primary_button_margin_top"
+            android:text="@string/start_game"
+            style="@style/BasePrimaryButtonStyle"
+            app:layout_constraintTop_toBottomOf="@id/how_to_play_button" />
+
+        <Button
+            android:id="@+id/ranking_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/primary_button_margin_top"
+            android:layout_marginBottom="@dimen/primary_button_margin_bottom"
+            android:text="@string/ranking"
+            style="@style/BasePrimaryButtonStyle"
+            app:layout_constraintTop_toBottomOf="@id/how_to_play_button" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
