@@ -1,3 +1,39 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin_60dp">60dp</dimen>
+    <dimen name="margin_50dp">50dp</dimen>
+    <dimen name="margin_40dp">40dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+
+    <!-- Splash -->
+    <dimen name="icon_size">200dp</dimen>
+    <dimen name="icon_margin_bottom">30dp</dimen>
+
+    <!-- Menu -->
+    <dimen name="title_margin_top">30dp</dimen>
+    <dimen name="primary_button_margin_top">30dp</dimen>
+    <dimen name="primary_button_margin_bottom">10dp</dimen>
+
+    <!-- Launch Game -->
+    <dimen name="icon_width">40dp</dimen>
+    <dimen name="icon_height">45dp</dimen>
+    <dimen name="toolbar_height">60dp</dimen>
+    <dimen name="camera_image_background_size">250dp</dimen>
+    <dimen name="camera_icon_size">90dp</dimen>
+    <dimen name="text_input_padding_top">1dp</dimen>
+    <dimen name="text_input_size">20sp</dimen>
+
+    <!-- Game -->
+    <dimen name="team_piece_size">50dp</dimen>
+    <dimen name="oscar_size">120dp</dimen>
+    <dimen name="oscar_margin_top">8dp</dimen>
+    <dimen name="level_divider_height">6dp</dimen>
+    <dimen name="card_elevation">5dp</dimen>
+    <dimen name="card_width">300dp</dimen>
+    <dimen name="card_height">310dp</dimen>
+    <dimen name="card_icon_size">150dp</dimen>
+    <dimen name="movie_image_size">200dp</dimen>
+
 </resources>

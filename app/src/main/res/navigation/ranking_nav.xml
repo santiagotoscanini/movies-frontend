@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ranking_nav"
+    app:startDestination="@id/rankingGuessedFragment">
+
+    <fragment
+        android:id="@+id/rankingGuessedFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.ranking.views.RankingGuessedFragment"
+        android:label="RankingGuessedFragment" />
+</navigation>

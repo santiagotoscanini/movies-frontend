@@ -1,12 +1,66 @@
 <resources>
-    <string name="app_name">Biladoniga-Toscanini-Tejerina</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="app_name">Movies</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <!-- Menu -->
+    <string name="movies">MOVIES</string>
+    <string name="how_to_play">How to play</string>
+    <string name="start_game">Start game</string>
+    <string name="ranking">Ranking</string>
+
+    <!-- Prepare teams -->
+    <string name="first_team">Team 1</string>
+    <string name="second_team">Team 2</string>
+    <string name="third_team">Team 3</string>
+    <string name="prepare_teams">Prepare teams</string>
+
+    <!-- Create team -->
+    <string name="teammate_name">Teammate name</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="add_team_photo">Add a team photo!</string>
+    <string name="take_photo">Take photo</string>
+    <string name="choose_from_gallery">Choose from Gallery</string>
+    <string name="get_image_error">Could not get the image, please retry</string>
+
+    <!-- Game -->
+    <string name="start_turn">Start turn</string>
+    <string name="no_game_error_message">Sorry, the game was not saved correctly</string>
+    <string name="no_team_error_message">Sorry, the game don\'t have any team to play</string>
+    <string name="no_teammate_error_message">Sorry, the team don\'t have any teammate to play</string>
+    <string name="team_1_turn">Team 1 turn</string>
+    <string name="team_2_turn">Team 2 turn</string>
+    <string name="team_3_turn">Team 3 turn</string>
+    <string name="start_show">Start show</string>
+    <string name="change_movie">Change Movie</string>
+    <string name="card_hide_instructions">Tap the card to reveal</string>
+    <string name="card_show_instructions">Shake the phone to change the movie</string>
+    <string name="acts">\u0020 acts</string>
+    <string name="error_in_request_message">There was an error in the movie request, please try again later.</string>
+    <string name="error_in_server_message">Movie server is having errors, please try again later.</string>
+    <string name="stop">stop</string>
+    <string name="did_team_guess">Did your team guess the movie?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="no_one">No one</string>
+    <string name="which_team_guess_it">Which team guess it?</string>
+
+    <!-- How to play -->
+    <string name="play">Play</string>
+    <string name="instructions">"1- You need to form teams of two people, in order to start the game you will need at least two teams.
+
+2- The teams must have a photo and the names of the members to be ready.
+
+3- Once the teams are ready, the game begins.
+
+4- To get closer to the goal and win the Oscar you must be a good actor and guess all the movies you can.
+
+5- During the shift, a team member must achieve by mime that his partner guess the name of the movie he played before time runs out.
+
+6- If your partner guesses the movie, you get one step closer to the goal, otherwise you should ask the other teams if they know the name of the movie and if anyone guessed, they will get the point."</string>
+
+    <!-- Ranking -->
+    <string name="position_num">#</string>
+    <string name="guessed">Guessed</string>
+    <string name="selected">Selected</string>
+    <string name="error_in_ranking_request_message">There was an error in the ranking request, please try again later.</string>
 </resources>

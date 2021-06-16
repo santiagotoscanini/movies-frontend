@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_nav"
+    app:startDestination="@id/gamePrincipalScreenFragment">
+
+    <fragment
+        android:id="@+id/gamePrincipalScreenFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.game.views.GamePrincipalScreenFragment"
+        android:label="GamePrincipalScreenFragment" >
+        <action
+            android:id="@+id/action_gamePrincipalScreenFragment_to_pickMovieFragment"
+            app:destination="@id/pickMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pickMovieFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.game.views.PickMovieFragment"
+        android:label="PickMovieFragment" >
+        <action
+            android:id="@+id/action_pickMovieFragment_to_representMovieFragment"
+            app:destination="@id/representMovieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/representMovieFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.game.views.RepresentMovieFragment"
+        android:label="RepresentMovieFragment" >
+        <action
+            android:id="@+id/action_representMovieFragment_to_turnResultFragment"
+            app:destination="@id/teamResultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamResultFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.game.views.TurnResultFragment"
+        android:label="TeamResultFragment" >
+        <action
+            android:id="@+id/action_teamResultFragment_to_gamePrincipalScreenFragment"
+            app:destination="@id/gamePrincipalScreenFragment" />
+        <action
+            android:id="@+id/action_teamResultFragment_to_turnResultAlternativeFragment"
+            app:destination="@id/turnResultAlternativeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/turnResultAlternativeFragment"
+        android:name="com.example.biladoniga_toscanini_tejerina.game.views.TurnResultAlternativeFragment"
+        android:label="TurnResultAlternativeFragment" >
+        <action
+            android:id="@+id/action_turnResultAlternativeFragment_to_gamePrincipalScreenFragment"
+            app:destination="@id/gamePrincipalScreenFragment" />
+    </fragment>
+</navigation>

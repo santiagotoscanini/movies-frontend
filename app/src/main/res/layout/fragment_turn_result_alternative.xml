@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/team_button_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/primary_button_margin_top"
+        android:text="@string/first_team"
+        style="@style/BasePrimaryButtonStyle"/>
+
+    <Button
+        android:id="@+id/team_button_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/primary_button_margin_top"
+        android:text="@string/second_team"
+        style="@style/BasePrimaryButtonStyle"/>
+
+    <Button
+        android:id="@+id/team_button_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/primary_button_margin_top"
+        android:text="@string/third_team"
+        style="@style/BasePrimaryButtonStyle"/>
+
+    <Button
+        android:id="@+id/no_one_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/primary_button_margin_top"
+        android:text="@string/no_one"
+        style="@style/BaseGreyButtonStyle"/>
+
+</LinearLayout>

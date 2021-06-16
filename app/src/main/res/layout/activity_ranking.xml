@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/ranking_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            app:navigationIcon="@drawable/ic_left_arrow">
+
+            <TextView
+                android:id="@+id/toolbar_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                style="@style/ToolbarTextStyle" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/order_by_guessed"
+                style="@style/CheckButtonStyle"
+                android:background="@drawable/rounded_corners_cancel_color"
+                android:visibility="gone"
+                android:text="@string/guessed"
+                app:layout_constraintEnd_toStartOf="@id/order_by_selected"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/order_by_selected"
+                style="@style/CheckButtonStyle"
+                android:background="@drawable/rounded_corners_start_color"
+                android:visibility="gone"
+                android:text="@string/selected"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/order_by_guessed"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <fragment
+            android:id="@+id/ranking_fragment"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/ranking_nav" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loader"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/loader"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
